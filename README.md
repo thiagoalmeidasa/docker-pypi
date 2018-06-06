@@ -1,7 +1,7 @@
 PyPI Server
 ===========
 
-[![](https://images.microbadger.com/badges/image/codekoala/pypi.svg)](https://microbadger.com/images/codekoala/pypi "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/thiagoalmeidasa/pypi.svg)](https://microbadger.com/images/thiagoalmeidasa/pypi "Get your own image badge on microbadger.com")
 
 This is a simple PyPI server that can be used to host internal packages and
 versions of packages that are suitable for use with proprietary products.
@@ -19,7 +19,7 @@ the Docker index, you can use commands such as the following:
         -v /srv/pypi:/srv/pypi:rw \     # host packages from local directory
         -p 8080:80 \                    # expose port 80 as port 8080
         --name pypi \                   # container name
-        codekoala/pypi                  # docker repository
+        thiagoalmeidasa/pypi            # docker repository
 
 Once running, you should be able to visit http://localhost:8080 to see the
 landing page for your very own PyPI server.

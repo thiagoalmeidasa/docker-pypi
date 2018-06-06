@@ -1,12 +1,11 @@
 FROM alpine:3.7
-MAINTAINER Josh VanderLinden <codekoala@gmail.com>
+LABEL MAINTAINER Thiago Almeida <thiagoalmeidasa@gmail.com>
 
-RUN apk update && \
-    apk add py-pip && \
-    pip install --upgrade pip && \
+RUN apk add --no-cache curl py-pip && \
+    pip install --no-cache-dir --upgrade pip && \
     mkdir -p /srv/pypi
 
-RUN pip install -U passlib pypiserver[cache]==1.2.1
+RUN pip install --no-cache-dir -U passlib pypiserver[cache]==1.2.1
 
 EXPOSE 80
 VOLUME ["/srv/pypi"]
