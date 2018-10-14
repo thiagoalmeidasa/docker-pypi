@@ -1,5 +1,5 @@
 IMG := thiagoalmeidasa/pypi
-TAG := 1.2.3
+TAG := 1.2.4
 IMG_TAG := $(IMG):$(TAG)
 
 PYPI ?= /srv/pypi
